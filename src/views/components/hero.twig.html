@@ -1,0 +1,59 @@
+<section id="hero" class="site-hero py-20">
+  <div class="container">
+    <div class="flex md:justify-between gap-x-8">
+      <div
+        class="md:flex-1 text-center bg-neutral-200 text-neutral-800 text-3xl p-4"
+		 data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out"
+      >
+        <h2>Hero Left</h2>
+      </div>
+      <div
+        class="md:flex-1 text-center bg-neutral-200 text-neutral-800 text-3xl p-4"
+		 data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1500" data-aos-easing="ease-in-out"
+      >
+        <h3>Hero Right</h3>
+      </div>
+    </div>
+  </div>
+  <div class="py-10">
+    <div class="container">
+      <div class="flex justify-between gap-8">
+        <div class="flex-1" x-data="dropdown">
+          <div class="mb-4">
+            <button
+              class="inline-block bg-blue-500 text-white rounded-md py-3 px-4 cursor-pointer hover:bg-blue-400"
+              @click="toggle"
+              x-bind:class="{ 'active': open }"
+            >
+              Toggle AlpineJS
+            </button>
+          </div>
+          <div class="bg-amber-200 p-4" x-show="open" x-cloak x-transition>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+            officiis aut! Labore esse delectus animi, distinctio aut adipisci
+            temporibus quos quidem molestias porro necessitatibus molestiae,
+            cumque ea ducimus reiciendis a!
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="mb-4">
+            <button
+              id="btn-toggle-jquery"
+              class="inline-block bg-teal-500 rounded-md py-3 px-4 cursor-pointer hover:bg-teal-400"
+            >
+              Toggle jQuery
+            </button>
+          </div>
+          <div class="card-body bg-amber-200 p-4 hidden">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A cumque
+              neque asperiores dignissimos tempora dolores delectus quam rem
+              molestias, maxime recusandae, deserunt fugiat dolorem voluptatibus
+              doloremque odio dolor minima praesentium!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
