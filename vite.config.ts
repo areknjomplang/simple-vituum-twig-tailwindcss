@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 import vituum from "vituum";
 import twig from "@vituum/vite-plugin-twig";
 import lightningCss from "vite-plugin-lightningcss";
-import { browserslist as bl } from "./package.json";
+import pkg from "./package.json" with { type: "json" };
 
 export default {
   plugins: [
@@ -13,7 +13,7 @@ export default {
       formats: ["twig", "html", ".html.twig"],
     }),
     lightningCss({
-      browserslist: bl,
+      browserslist: pkg.browserslist,
     }),
   ],
 };

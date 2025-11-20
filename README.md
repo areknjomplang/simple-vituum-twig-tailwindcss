@@ -1,6 +1,9 @@
-### Simple Vituum Twig Tailwindcss
+# Simple Vituum Twig Tailwindcss
 
 Personal starter theme development.
+
+## Tech Stack
+
 - Vite
 - Vituum
 - Twig
