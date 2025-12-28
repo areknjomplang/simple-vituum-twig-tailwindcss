@@ -9,12 +9,17 @@
   body {
     @apply font-inter;
   }
-  [x-cloak] {
-    @apply hidden;
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold font-garamond;
   }
 }
 
 @utility container {
-  padding-inline: theme("spacing.4");
+  padding-inline: theme("spacing.6");
   margin-inline: auto;
+}
+
+[x-cloak] {
+  display: none !important;
 }
