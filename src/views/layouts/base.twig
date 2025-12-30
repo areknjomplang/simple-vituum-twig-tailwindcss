@@ -4,26 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>{% block title %}Document{% endblock %} - MySite</title>
-    {% block head %}{% endblock %}
+    <title>
+      {% block title %}
+        Document
+      {% endblock title %}- MySite
+    </title>
+    {% block head %}
+
+    {% endblock head %}
   </head>
   <body>
     <header id="masthead" class="site-header">
       {% block header %}
-      <div>Header Area</div>
-      {% endblock %}
+        <div>
+          Header Area
+        </div>
+      {% endblock header %}
     </header>
     <div id="content" class="site-content">
       {% block content %}
-      <div>Content Area</div>
-      {% endblock %}
+        <div>
+          Content Area
+        </div>
+      {% endblock content %}
     </div>
     <footer id="colophon" class="site-footer">
       {% block footer %}
-      <div>Footer Area</div>
-      {% endblock %}
+        <div>
+          Footer Area
+        </div>
+      {% endblock footer %}
     </footer>
     <script type="module" src="/src/scripts/main.js"></script>
-    {% block javascript %}{% endblock %}
+    {% block javascript %}
+
+    {% endblock javascript %}
   </body>
 </html>

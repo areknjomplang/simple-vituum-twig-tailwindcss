@@ -2,7 +2,7 @@ import Alpine from '@alpinejs/csp';
 
 window.Alpine = Alpine;
 
-Alpine.data("dropdown", () => ({
+Alpine.data('dropdown', () => ({
   open: false,
   toggle() {
     this.open = !this.open;
@@ -11,4 +11,4 @@ Alpine.data("dropdown", () => ({
 
 Alpine.start();
 
-console.log("Alpine loaded");
+console.log('Alpine loaded');

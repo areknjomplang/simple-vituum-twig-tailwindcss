@@ -1,16 +1,16 @@
-import jQuery from "jquery";
+import jQuery from 'jquery';
 
 (function ($) {
-  "use strict";
+  'use strict';
 
   $(document).ready(function () {
-    console.log("jQuery loaded");
+    console.log('jQuery loaded');
 
-    $("#btn-toggle-jquery").on("click", function () {
-      if ($(".card-body").hasClass("hidden")) {
-        $(".card-body").removeClass("hidden");
+    $('#btn-toggle-jquery').on('click', function () {
+      if ($('.card-body').hasClass('hidden')) {
+        $('.card-body').removeClass('hidden');
       } else {
-        $(".card-body").addClass("hidden");
+        $('.card-body').addClass('hidden');
       }
     });
   });

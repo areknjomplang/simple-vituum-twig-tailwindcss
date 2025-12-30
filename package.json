@@ -7,6 +7,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "format:css": "prettier --write 'src/styles/*.css'",
+    "format:js": "prettier --write 'src/scripts/*.js'",
+    "format:twig": "prettier --write 'src/**/*.twig'",
+    "format": "pnpm run format:css && pnpm run format:js && pnpm run format:twig",
     "clean": "rimraf dist"
   },
   "devDependencies": {

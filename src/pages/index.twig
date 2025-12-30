@@ -1,18 +1,18 @@
-{% extends "views/layouts/base.twig" %}
+{% extends 'views/layouts/base.twig' %}
 {% block title %}
-	Simple Vituum + Tailwindcss
-{% endblock %}
+  Simple Vituum + Tailwindcss
+{% endblock title %}
 
 {% block header %}
-	{% include "views/partials/header.twig" %}
-{% endblock %}
+  {% include 'views/partials/header.twig' %}
+{% endblock header %}
 
 {% block content %}
-	<main id="main" class="site-main">
-		{% include "views/components/hero.twig" %}
-	</main>
-{% endblock %}
+  <main id="main" class="site-main">
+    {% include 'views/components/hero.twig' %}
+  </main>
+{% endblock content %}
 
 {% block footer %}
-	{% include "views/partials/footer.twig" %}
-{% endblock %}
+  {% include 'views/partials/footer.twig' %}
+{% endblock footer %}
